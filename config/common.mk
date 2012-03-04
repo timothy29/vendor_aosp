@@ -50,7 +50,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     net.tcp.buffersize.wifi=4096,87380,256960,4096,16384,256960 \
     net.tcp.buffersize.umts=4096,87380,256960,4096,16384,256960 \
     net.tcp.buffersize.gprs=4096,87380,256960,4096,16384,256960 \
-    net.tcp.buffersize.edge=4096,87380,256960,4096,16384,256960 
+    net.tcp.buffersize.edge=4096,87380,256960,4096,16384,256960
+
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/aosp/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/aosp/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/aosp/prebuilt/common/bin/50-xy.sh:system/addon.d/50-xy.sh
 
 # Version information used on all builds
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=JOP40D BUILD_VERSION_TAGS=release-keys USER=android-build BUILD_EST_DATE=$(shell date +"%s")
