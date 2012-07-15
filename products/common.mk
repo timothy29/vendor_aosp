@@ -21,7 +21,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Build.Prop Tweaks
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.android.checkjni=0 \
-    windowsmgr.max_events_per_sec=240 \
+    windowsmgr.max_events_per_sec=275 \
     debug.performance.tuning=1 \
     video.accelerate.hw=1 \
     debug.sf.hw=1 \
