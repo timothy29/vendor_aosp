@@ -1,6 +1,7 @@
 # FNV specific properties
 PRODUCT_PACKAGES += \
-    GooManager
+    GooManager \
+    FNVPapers
 
 # Build Properties
 PRODUCT_PROPERTY_OVERRIDES += \
