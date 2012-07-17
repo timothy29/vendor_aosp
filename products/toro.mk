@@ -36,12 +36,6 @@ PRODUCT_COPY_FILES +=  \
     vendor/fnv/proprietary/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
     vendor/fnv/proprietary/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd 
 
-# Copy missing GPS/Camera files
-PRODUCT_COPY_FILES +=  \
-    vendor/fnv/proprietary/tuna/vendor/etc/sirfgps.conf:vendor/etc/sirfgps.conf \
-    vendor/fnv/proprietary/tuna/vendor/lib/hw/gps.omap4.so:vendor/lib/hw/gps.omap4.so \
-    vendor/fnv/proprietary/tuna/vendor/firmware/ducati-m3.bin:vendor/firmware/ducati-m3.bin 
-
 
 
 
