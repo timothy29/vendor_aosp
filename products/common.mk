@@ -13,22 +13,22 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.locationfeatures=1 \
     ro.setupwizard.mode=OPTIONAL \
     ro.setupwizard.enterprise_mode=1 \
-    ro.config.ringtone=Hydra.ogg \
-    ro.config.notification_sound=Proxima.ogg \
+    ro.config.ringtone=ThemosICS.mp3 \
+    ro.config.notification_sound=Nexus.mp3 \
     ro.config.alarm_alert=Alarm_Beep_03.ogg \
     ro.modversion=FNV-$(shell date +"%m-%d-%Y") 
 
 # Build.Prop Tweaks
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.android.checkjni=0 \
-    windowsmgr.max_events_per_sec=275 \
+    windowsmgr.max_events_per_sec=280 \
     debug.performance.tuning=1 \
     video.accelerate.hw=1 \
     debug.sf.hw=1 \
     ro.media.enc.jpeg.quality=100 \
     pm.sleep_mode=1 \
     ro.ril.disable.power.collapse=0 \
-    ro.telephony.call_ring.delay=0 \
+    ro.telephony.call_ring.delay=500 \
     video.accelerate.hw=1 \
     ro.kernel.checkjni=0 \
     net.tcp.buffersize.default=4096,87380,256960,4096,16384,256960 \
@@ -44,7 +44,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=IMM76D BUILD_VERSION_TAGS=relea
 # Blobs common to all devices
 PRODUCT_COPY_FILES += \
     vendor/fnv/proprietary/common/app/Superuser.apk:system/app/Superuser.apk \
-    vendor/fnv/proprietary/common/xbin/busybox:system/xbin/busybox \
     vendor/fnv/proprietary/common/xbin/su:system/xbin/su \
     vendor/fnv/proprietary/common/xbin/sysrw:system/xbin/sysrw \
     vendor/fnv/proprietary/common/xbin/sysro:system/xbin/sysro 
