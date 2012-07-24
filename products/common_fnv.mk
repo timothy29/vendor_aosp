@@ -7,4 +7,4 @@ PRODUCT_PACKAGES += \
 
 # Build Properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.fnv.version=$(TARGET_PRODUCT)_007
+    ro.fnv.version=$(TARGET_PRODUCT)_008
