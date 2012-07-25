@@ -2,8 +2,7 @@
 PRODUCT_PACKAGES += \
     GooManager \
     FNVPapers \
-    AppWidgetPicker \
-    busybox
+    AppWidgetPicker
 
 # Build Properties
 PRODUCT_PROPERTY_OVERRIDES += \
