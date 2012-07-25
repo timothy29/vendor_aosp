@@ -51,8 +51,9 @@ PRODUCT_COPY_FILES += \
 
 # Misc Files
 PRODUCT_COPY_FILES +=  \
-vendor/fnv/proprietary/common/etc/hosts:system/etc/hosts \
-vendor/fnv/proprietary/common/etc/resolv.conf:system/etc/resolv.conf 
+    vendor/fnv/proprietary/common/etc/hosts:system/etc/hosts \
+    vendor/fnv/proprietary/common/etc/resolv.conf:system/etc/resolv.conf \
+    vendor/fnv/proprietary/common/etc/init.d/00fnv:system/etc/init.d/00fnv
 
 # Audio Packages
 include frameworks/base/data/sounds/AudioPackage7.mk
