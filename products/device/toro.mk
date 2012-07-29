@@ -7,9 +7,6 @@ $(call inherit-product, vendor/fnv/products/common.mk)
 # Inherit fnv specific configurations
 $(call inherit-product, vendor/fnv/products/common_fnv.mk)
 
-# Inherit phone configuration.
-$(call inherit-product, vendor/fnv/products/common_phone.mk)
-
 # Setup device specific product configuration.
 PRODUCT_NAME := fnv_toro
 PRODUCT_BRAND := google
