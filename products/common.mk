@@ -57,8 +57,8 @@ PRODUCT_COPY_FILES +=  \
     vendor/fnv/proprietary/common/bin/sysinit:system/bin/sysinit
 
 # userinit support (credit CM Team)
-PRODUCT_COPY_FILES += \
-    vendor/fnv/proprietary/common/etc/init.d/90userinit:system/etc/init.d/90userinit
+#PRODUCT_COPY_FILES += \
+#    vendor/fnv/proprietary/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 
 # Audio Packages
 include frameworks/base/data/sounds/AudioPackage7.mk

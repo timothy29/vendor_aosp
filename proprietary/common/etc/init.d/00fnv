@@ -2,6 +2,6 @@
 # Test for working init.d
 # Manual sysinit test
 
-export PATH=/sbin:/system/sbin:/system/bin:/system/xbin 
-/system/bin/logwrapper /system/xbin/run-parts /system/etc/init.d
+#export PATH=/sbin:/system/sbin:/system/bin:/system/xbin 
+#/system/bin/logwrapper /system/xbin/run-parts /system/etc/init.d
 
