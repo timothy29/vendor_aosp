@@ -64,4 +64,4 @@ PRODUCT_COPY_FILES +=  \
 include frameworks/base/data/sounds/AudioPackage7.mk
 
 # T-Mobile theme engine (just unhash this once the framework side is done)
-# include vendor/fnv/products/themechooser/themechooser.mk
+include vendor/fnv/products/themechooser/themechooser.mk
