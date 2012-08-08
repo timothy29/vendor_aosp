@@ -12,7 +12,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.developerid=projectfnv \
     ro.goo.rom=FNV \
-    ro.goo.version=1
+    ro.goo.version=2
 
 # Copy themes to /system
 PRODUCT_COPY_FILES += \
