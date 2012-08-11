@@ -29,7 +29,7 @@ PRODUCT_COPY_FILES +=  \
 
 # Copy toro specific prebuilt files
 PRODUCT_COPY_FILES +=  \
-    vendor/fnv/proprietary/tuna/media/bootanimation.zip:system/media/bootanimation.zip \
+    vendor/fnv/proprietary/tuna/media/bootanimation-astley.zip:system/media/bootanimation.zip \
     vendor/fnv/proprietary/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
     vendor/fnv/proprietary/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd 
 
