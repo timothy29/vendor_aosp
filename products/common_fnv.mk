@@ -1,7 +1,6 @@
 # FNV specific properties
 PRODUCT_PACKAGES += \
     GooManager \
-    FNVPapers \
     AppWidgetPicker
 
 # Build Properties
@@ -13,6 +12,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.developerid=projectfnv \
     ro.goo.rom=FNV \
     ro.goo.version=3
+
+# Copy WallPaper App
+PRODUCT_COPY_FILES += \
+    vendor/fnv/proprietary/common/app/FNVW_2.0.1.apk:system/app/FNVPapers.apk
 
 # Copy themes to /system
 PRODUCT_COPY_FILES += \
