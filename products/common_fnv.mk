@@ -17,6 +17,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/fnv/proprietary/common/app/FNVW_2.0.1.apk:system/app/FNVPapers.apk
 
+# Copy Sounds to media
+PRODUCT_COPY_FILES += \
+    vendor/fnv/proprietary/common/media/AstleyRingtone.mp3:system/media/audio/ringtones/AstleyRingtone.mp3 \
+    vendor/fnv/proprietary/common/media/AstleyNotification.mp3:system/media/audio/notifications/AstleyNotification.mp3
+
 # Copy themes to /system
 PRODUCT_COPY_FILES += \
     vendor/fnv/proprietary/common/app/pcb-carrot-release.apk:system/app/com.teambroccoli.theme.pcbcarrot.apk \
