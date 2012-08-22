@@ -5,13 +5,13 @@ PRODUCT_PACKAGES += \
 
 # Build Properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.fnv.version=$(TARGET_PRODUCT)_008
+    ro.fnv.version=$(TARGET_PRODUCT)_009
 
 # GooManager Properties
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.developerid=projectfnv \
     ro.goo.rom=FNV \
-    ro.goo.version=3
+    ro.goo.version=4
 
 # Copy WallPaper App
 PRODUCT_COPY_FILES += \
