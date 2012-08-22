@@ -51,7 +51,6 @@ PRODUCT_COPY_FILES += \
 
 # Misc Files & init.d files
 PRODUCT_COPY_FILES +=  \
-    vendor/fnv/proprietary/common/etc/hosts:system/etc/hosts \
     vendor/fnv/proprietary/common/etc/resolv.conf:system/etc/resolv.conf \
     vendor/fnv/proprietary/common/etc/init.d/00fnv:system/etc/init.d/00fnv \
     vendor/fnv/proprietary/common/bin/sysinit:system/bin/sysinit
