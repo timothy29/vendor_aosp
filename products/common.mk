@@ -13,9 +13,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.locationfeatures=1 \
     ro.setupwizard.mode=OPTIONAL \
     ro.setupwizard.enterprise_mode=1 \
-    ro.config.ringtone=Enter_The_Nexus.ogg \
+    ro.config.ringtone=Enter_the_Nexus.ogg \
     ro.config.notification_sound=Helium.ogg \
-    ro.config.alarm_alert=Alarm_Beep_03.ogg \
+    ro.config.alarm_alert=Alarm_Rooster_02.ogg \
     ro.modversion=FNV-$(shell date +"%m-%d-%Y") 
 
 # Build.Prop Tweaks
