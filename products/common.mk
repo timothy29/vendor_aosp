@@ -53,11 +53,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES +=  \
     vendor/fnv/proprietary/common/etc/resolv.conf:system/etc/resolv.conf \
     vendor/fnv/proprietary/common/etc/init.d/00fnv:system/etc/init.d/00fnv \
+    vendor/fnv/proprietary/common/etc/init.d/01cherrybomb:system/etc/init.d/01cherrybomb \
+    vendor/fnv/proprietary/common/etc/init.d/09cron:system/etc/init.d/09cron \
+    vendor/fnv/proprietary/common/etc/init.d/98fruit:system/etc/init.d/98fruit \
     vendor/fnv/proprietary/common/bin/sysinit:system/bin/sysinit
-
-# userinit support (credit CM Team)
-#PRODUCT_COPY_FILES += \
-#    vendor/fnv/proprietary/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 
 # Audio Packages
 include frameworks/base/data/sounds/AudioPackage7.mk
