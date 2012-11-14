@@ -1,3 +1,3 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/device/toro.mk \
-    $(LOCAL_DIR)/device/maguro.mk
+    $(LOCAL_DIR)/toro.mk \
+    $(LOCAL_DIR)/maguro.mk
