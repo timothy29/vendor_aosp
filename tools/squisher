@@ -1,8 +1,11 @@
 #!/bin/sh
 #
 # Squish a CM otapackage for distribution
-# cyanogen
 #
+# cyanogen
+# AOSP - XYLON
+
+. $ANDROID_BUILD_TOP/vendor/aosp/tools/colors
 
 OUT_TARGET_HOST=`uname -a | grep Darwin`
 if [ -z "$OUT_TARGET_HOST" ]
@@ -35,7 +38,7 @@ if [ ! -f "$OTAPACKAGE" ]; then
 	exit 1
 fi
 
-OPTICHARGER=$ANDROID_BUILD_TOP/vendor/fnv/tools/opticharger
+OPTICHARGER=$ANDROID_BUILD_TOP/vendor/aosp/tools/opticharger
 QUIET=-q
 DELETE_BINS="applypatch applypatch_static check_prereq recovery updater"
 
@@ -52,25 +55,25 @@ if [ "$WANT_SQUASHFS" -eq 1 ]; then
 	if type mksquashfs >/dev/null 2>&1; then
 		if mksquashfs -version | grep -q "version $MKSQUASHFS_VER_REQ"; then :; else
 			echo
-			echo "ERROR: mksquashfs must be at least version $MKSQUASHFS_VER_REQ for this build."
+			echo $CL_RED"ERROR: mksquashfs must be at least version $MKSQUASHFS_VER_REQ for this build."$CL_RST
 			fatal=1
 		fi
 	else
 		echo
-		echo "ERROR: $TARGET_PRODUCT requires mksquashfs."
+		echo $CL_RED"ERROR: $TARGET_PRODUCT requires mksquashfs."$CL_RST
 		fatal=1
 	fi
 
 	if [ "$fatal" -ne 0 ]; then
 		echo
-		echo "       Unoptimized package is still available at"
-		echo "         $OTAPACKAGE"
+		echo $CL_YLW"       Unoptimized package is still available at"
+		echo "         $OTAPACKAGE"$CL_RST
 		exit $fatal
 	fi
 fi
 
 REPACK=$OUT/repack.d
-printf "Sanitizing environment..."
+echo $CL_CYN"Sanitizing environment..."$CL_RST
 rm -rf $REPACK
 mkdir -p $REPACK
 echo
@@ -80,13 +83,28 @@ echo
 mkdir $REPACK/ota
 (
 cd $REPACK/ota
-printf "Unpacking $OTAPACKAGE..."
+echo $CL_CYN"Unpacking $OTAPACKAGE..."$CL_RST
 unzip $QUIET $OTAPACKAGE
 echo
-cd $REPACK/ota/system/framework
-$OPTICHARGER framework-res.apk
-cd $REPACK/ota/system/app
+
+# Move all apks to the same directory so xargs can
+# use also with framework-res.apk. This allow process
+# framework-res.apk in parallel with other apks
+mkdir -p $REPACK/parallel
+cd $REPACK/parallel
+cp $REPACK/ota/system/framework/framework-res.apk .
+cp $REPACK/ota/system/app/*.apk .
+
+# Do optimization in parallel
 find ./ -name \*.apk | $XARGS $OPTICHARGER
+
+# Move optimized apks to repack directory
+mv -f $REPACK/parallel/framework-res.apk $REPACK/ota/system/framework/framework-res.apk
+mv -f $REPACK/parallel/*.apk $REPACK/ota/system/app/
+
+# Return to directory
+cd $REPACK/ota
+rm -rf $REPACK/parallel
 )
 
 
@@ -101,7 +119,7 @@ if [ "$WANT_SQUASHFS" -eq 1 ]; then
 	chmod -R 555 $REPACK/_xbin/*
 
 	# Create symlinks for su and busybox (since updater-script can't work on the squashfs filesystem).
-	# Forgive me for the regex hell here. 
+	# Forgive me for the regex hell here.
 	ln -s ../bin/su $REPACK/_xbin/su
 	for link in `sed -n -e's/,//g' -e'/symlink(.*busybox/,/xbin.*);/p' $updater | tr '"' '\n' | sed -n -e'\,/system/xbin/,s,/system/xbin/,,p'`
 	do
@@ -142,22 +160,22 @@ rm -rf $REPACK/ota/recovery
 # Determine what to name the new signed package
 
 #MODVERSION=`sed -n -e'/ro\.modversion/s/^.*=//p' $REPACK/ota/system/build.prop`
-VERSION=`cat "vendor/fnv/products/common_fnv.mk" | grep ro.fnv.version | head -1 | cut -f2 -d '=' | cut -f3 -d '_'`
-MODVERSION="$TARGET_PRODUCT"-build-"$VERSION"
+VERSION=`sed -n -e'/ro.xylon.version/s/^.*=//p' $REPACK/ota/system/build.prop`
+MODVERSION="$VERSION"
 OUTFILE=$OUT/$MODVERSION.zip
 
 # Pack it up and sign
-printf "Zipping package..."
+echo $CL_CYN"Zipping package..."$CL_RST
 ( cd $REPACK/ota; zip $QUIET -r $REPACK/update.zip . )
 echo
-printf "Signing package..."
+echo $CL_CYN"Signing package..."$CL_RST
 SECURITYDIR=$ANDROID_BUILD_TOP/build/target/product/security
 java -Xmx1024m \
 	-jar $ANDROID_BUILD_TOP/out/host/$OUT_TARGET_HOST/framework/signapk.jar \
 	-w $SECURITYDIR/testkey.x509.pem $SECURITYDIR/testkey.pk8 \
 	$REPACK/update.zip $OUTFILE
 echo
-printf "Cleaning up..."
+echo $CL_CYN"Cleaning up..."$CL_RST
 rm -rf $REPACK
 echo
 
@@ -167,7 +185,7 @@ img=`basename $OUTFILE`
 cd `dirname $OUTFILE`
 $MD5 $img >$img.md5sum
 echo
-echo "Package complete: $OUTFILE"
+echo $CL_CYN"Package complete:"$CL_MAG" $OUTFILE"$CL_RST
 cat $img.md5sum
 echo
 )

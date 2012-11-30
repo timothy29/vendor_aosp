@@ -1,2 +1,4 @@
-add_lunch_combo fnv_toro-userdebug
-add_lunch_combo fnv_maguro-userdebug
+add_lunch_combo xylon_maguro-userdebug
+add_lunch_combo xylon_toro-userdebug
+add_lunch_combo xylon_mako-userdebug
+add_lunch_combo xylon_toroplus-userdebug
