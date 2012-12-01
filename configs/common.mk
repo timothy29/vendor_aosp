@@ -5,7 +5,7 @@ PRODUCT_DEVICE := generic
 
 # Build Properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.xylon.version=$(TARGET_PRODUCT)_0082_$(shell date +"%m-%d-%Y")
+    ro.xylon.version=$(TARGET_PRODUCT)_0083_$(shell date +"%m-%d-%Y")
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/common
 
@@ -31,7 +31,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     net.tcp.buffersize.edge=4096,87380,256960,4096,16384,256960 
 
 # Version information used on all builds
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=JOP40C BUILD_VERSION_TAGS=release-keys USER=android-build BUILD_EST_DATE=$(shell date +"%s")
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=JOP40D BUILD_VERSION_TAGS=release-keys USER=android-build BUILD_EST_DATE=$(shell date +"%s")
 
 # Bring in all audio files
 include frameworks/base/data/sounds/NewAudio.mk
