@@ -44,6 +44,7 @@ $(call inherit-product, frameworks/base/data/videos/VideoPackage2.mk)
 
 # CyanogenMod Packages
 PRODUCT_PACKAGES += \
+        CMFileManager \
 	DSPManager \
         libcyanogen-dsp \
         audio_effects.conf
