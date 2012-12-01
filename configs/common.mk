@@ -5,7 +5,7 @@ PRODUCT_DEVICE := generic
 
 # Build Properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.xylon.version=$(TARGET_PRODUCT)_0083_$(shell date +"%m-%d-%Y")
+    ro.xylon.version=$(TARGET_PRODUCT)_009_$(shell date +"%m-%d-%Y")
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/common
 
