@@ -20,6 +20,6 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/tuna
 
 # Copy toro specific prebuilt files
 PRODUCT_COPY_FILES +=  \
-    vendor/aosp/proprietary/tuna/media/bootanimation-new.zip:system/media/bootanimation.zip \
-    vendor/aosp/proprietary/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
-    vendor/aosp/proprietary/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
+    vendor/aosp/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip \
+    vendor/aosp/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
+    vendor/aosp/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd

@@ -59,25 +59,25 @@ PRODUCT_PACKAGES += \
 
 # Blobs common to all devices
 PRODUCT_COPY_FILES += \
-    vendor/aosp/proprietary/common/xbin/su:system/xbin/su \
-    vendor/aosp/proprietary/common/xbin/sysrw:system/xbin/sysrw \
-    vendor/aosp/proprietary/common/xbin/sysro:system/xbin/sysro
+    vendor/aosp/prebuilt/common/xbin/su:system/xbin/su \
+    vendor/aosp/prebuilt/common/xbin/sysrw:system/xbin/sysrw \
+    vendor/aosp/prebuilt/common/xbin/sysro:system/xbin/sysro
 
 # Misc Files & init.d files
 PRODUCT_COPY_FILES +=  \
-    vendor/aosp/proprietary/common/etc/resolv.conf:system/etc/resolv.conf \
-    vendor/aosp/proprietary/common/etc/init.d/00fnv:system/etc/init.d/00fnv \
-    vendor/aosp/proprietary/common/etc/init.d/01cherrybomb:system/etc/init.d/01cherrybomb \
-    vendor/aosp/proprietary/common/etc/init.d/09cron:system/etc/init.d/09cron \
-    vendor/aosp/proprietary/common/etc/init.d/98fruit:system/etc/init.d/98fruit \
-    vendor/aosp/proprietary/common/etc/init.local.rc:root/init.xylon.rc \
-    vendor/aosp/proprietary/common/bin/sysinit:system/bin/sysinit
+    vendor/aosp/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf \
+    vendor/aosp/prebuilt/common/etc/init.d/00fnv:system/etc/init.d/00fnv \
+    vendor/aosp/prebuilt/common/etc/init.d/01cherrybomb:system/etc/init.d/01cherrybomb \
+    vendor/aosp/prebuilt/common/etc/init.d/09cron:system/etc/init.d/09cron \
+    vendor/aosp/prebuilt/common/etc/init.d/98fruit:system/etc/init.d/98fruit \
+    vendor/aosp/prebuilt/common/etc/init.local.rc:root/init.xylon.rc \
+    vendor/aosp/prebuilt/common/bin/sysinit:system/bin/sysinit
 
-# Google Proprietaries till a proper GApps done by Dorilife
+# Google Proprietaries
 PRODUCT_COPY_FILES +=  \
-    vendor/aosp/proprietary/common/lib/libgtalk_jni.so:system/lib/libgtalk_jni.so \
-    vendor/aosp/proprietary/common/lib/libgtalk_stabilize.so:system/lib/libgtalk_stabilize.so \
-    vendor/aosp/proprietary/common/lib/libjni_filtershow_filters.so:system/lib/libjni_filtershow_filters.so \
-    vendor/aosp/proprietary/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so \
-    vendor/aosp/proprietary/common/lib/libjni_mosaic.so:system/lib/libjni_mosaic.so \
-    vendor/aosp/proprietary/common/lib/liblightcycle.so:system/lib/liblightcycle.so
+    vendor/aosp/prebuilt/common/lib/libgtalk_jni.so:system/lib/libgtalk_jni.so \
+    vendor/aosp/prebuilt/common/lib/libgtalk_stabilize.so:system/lib/libgtalk_stabilize.so \
+    vendor/aosp/prebuilt/common/lib/libjni_filtershow_filters.so:system/lib/libjni_filtershow_filters.so \
+    vendor/aosp/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so \
+    vendor/aosp/prebuilt/common/lib/libjni_mosaic.so:system/lib/libjni_mosaic.so \
+    vendor/aosp/prebuilt/common/lib/liblightcycle.so:system/lib/liblightcycle.so
