@@ -7,7 +7,8 @@ $(call inherit-product, device/samsung/maguro/full_maguro.mk)
 # Inherit common product files.
 $(call inherit-product, vendor/aosp/configs/common.mk)
 
-# Inherit fnv specific configurations
+# Tuna Overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/tuna
 
 # Setup device specific product configuration.
 PRODUCT_NAME := xylon_maguro
@@ -17,9 +18,6 @@ PRODUCT_MODEL := Galaxy Nexus
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=takju BUILD_ID=JOP40C BUILD_FINGERPRINT=google/takju/maguro:4.2/JOP40C/527662:user/release-keys PRIVATE_BUILD_DESC="takju-user 4.2 JOP40C 527662 release-keys" BUILD_NUMBER=527662
-
-# Tuna Overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/tuna
 
 # Copy maguro specific prebuilt files
 PRODUCT_COPY_FILES +=  \
