@@ -51,10 +51,11 @@ PRODUCT_PACKAGES += \
 
 # Xylon Packages
 PRODUCT_PACKAGES += \
-        Xylonpapers \
         NovaLauncher \
+        PerformanceControl \
         SuperSU \
-        Torch
+        Torch \
+        Xylonpapers
 
 # Blobs common to all devices
 PRODUCT_COPY_FILES += \
