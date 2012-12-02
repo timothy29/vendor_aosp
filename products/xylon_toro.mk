@@ -2,7 +2,7 @@
 $(call inherit-product, device/samsung/toro/full_toro.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/aosp/configs/common.mk)
+$(call inherit-product, vendor/aosp/config/common.mk)
 
 # Inherit fnv specific configurations
 
