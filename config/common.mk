@@ -10,7 +10,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/common
 
 # T-Mobile theme engine
-include vendor/aosp/configs/themes_common.mk
+include vendor/aosp/config/themes_common.mk
 
 # Build.Prop Tweaks
 PRODUCT_PROPERTY_OVERRIDES += \

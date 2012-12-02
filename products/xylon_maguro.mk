@@ -1,11 +1,11 @@
 ## Specify phone tech before including full_phone
-$(call inherit-product, vendor/aosp/configs/common_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_phone.mk)
 
 # Inherit AOSP device configuration for maguro.
 $(call inherit-product, device/samsung/maguro/full_maguro.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/aosp/configs/common.mk)
+$(call inherit-product, vendor/aosp/config/common.mk)
 
 # Tuna Overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/tuna

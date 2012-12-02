@@ -1,8 +1,11 @@
+## Specify phone tech before including full_phone
+$(call inherit-product, vendor/aosp/config/common_phone.mk)
+
 # Inherit AOSP device configuration for mako.
 $(call inherit-product, device/lge/mako/full_mako.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/aosp/configs/common.mk)
+$(call inherit-product, vendor/aosp/config/common.mk)
 
 # Inherit fnv specific configurations
 
