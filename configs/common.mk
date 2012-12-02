@@ -52,6 +52,7 @@ PRODUCT_PACKAGES += \
 # Xylon Packages
 PRODUCT_PACKAGES += \
         Xylonpapers \
+        NovaLauncher \
         SuperSU \
         Torch
 
