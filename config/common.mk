@@ -5,7 +5,7 @@ PRODUCT_DEVICE := generic
 
 # Build Properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.xylon.version=$(TARGET_PRODUCT)_010_$(shell date +"%m-%d-%Y")
+    ro.xylon.version=$(TARGET_PRODUCT)_011_$(shell date +"%m-%d-%Y")
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/common
 
@@ -51,7 +51,6 @@ PRODUCT_PACKAGES += \
 
 # Xylon Packages
 PRODUCT_PACKAGES += \
-        NovaLauncher \
         PerformanceControl \
         SuperSU \
         Torch \
@@ -65,6 +64,7 @@ PRODUCT_COPY_FILES += \
 
 # Misc Files & init.d files
 PRODUCT_COPY_FILES +=  \
+    vendor/aosp/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
     vendor/aosp/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf \
     vendor/aosp/prebuilt/common/etc/init.d/00fnv:system/etc/init.d/00fnv \
     vendor/aosp/prebuilt/common/etc/init.d/01cherrybomb:system/etc/init.d/01cherrybomb \
