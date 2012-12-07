@@ -1,8 +1,8 @@
 ## Specify phone tech before including full_phone
 $(call inherit-product, vendor/aosp/config/common_phone.mk)
 
-# Inherit AOSP device configuration for maguro.
-$(call inherit-product, device/samsung/grouper/full_grouper.mk)
+# Inherit AOSP device configuration for grouper.
+$(call inherit-product, device/asus/grouper/full_grouper.mk)
 
 # Inherit common product files.
 $(call inherit-product, vendor/aosp/config/common.mk)
