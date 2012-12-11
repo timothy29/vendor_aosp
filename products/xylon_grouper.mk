@@ -10,6 +10,9 @@ $(call inherit-product, vendor/aosp/config/common.mk)
 # Nexus 7 Overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/grouper
 
+# Tablet Overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/common_tablet
+
 # Setup device specific product configuration.
 PRODUCT_NAME := xylon_grouper
 PRODUCT_BRAND := google
