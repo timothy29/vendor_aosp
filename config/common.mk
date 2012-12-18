@@ -5,7 +5,7 @@ PRODUCT_DEVICE := generic
 
 # Build Properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.xylon.version=$(TARGET_PRODUCT)_012_EXP_$(shell date +"%m-%d-%Y")
+    ro.xylon.version=$(TARGET_PRODUCT)_012_$(shell date +"%m-%d-%Y")
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/common
 
@@ -14,7 +14,7 @@ include vendor/aosp/config/themes_common.mk
 
 # Build.Prop Tweaks
 PRODUCT_PROPERTY_OVERRIDES += \
-    wifi.supplicant_scan_interval=300 \
+    wifi.supplicant_scan_interval=180 \
     ro.kernel.android.checkjni=0 \
     windowsmgr.max_events_per_sec=280 \
     net.bt.name=Android \
