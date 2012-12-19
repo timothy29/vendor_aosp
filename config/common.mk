@@ -73,7 +73,6 @@ PRODUCT_PACKAGES += \
 
 # Xylon Packages
 PRODUCT_PACKAGES += \
-        PerformanceControl \
         SuperSU \
         Torch \
         Xylonpapers
