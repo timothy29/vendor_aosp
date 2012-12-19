@@ -1,8 +1,8 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xylon_crespo.mk \
-    $(LOCAL_DIR)/xylon_d2att.mk \
-    $(LOCAL_DIR)/xylon_grouper.mk \
-    $(LOCAL_DIR)/xylon_maguro.mk \
-    $(LOCAL_DIR)/xylon_mako.mk \
-    $(LOCAL_DIR)/xylon_toro.mk \
-    $(LOCAL_DIR)/xylon_toroplus.mk
+    $(LOCAL_DIR)/crespo.mk \
+    $(LOCAL_DIR)/d2att.mk \
+    $(LOCAL_DIR)/grouper.mk \
+    $(LOCAL_DIR)/maguro.mk \
+    $(LOCAL_DIR)/mako.mk \
+    $(LOCAL_DIR)/toro.mk \
+    $(LOCAL_DIR)/toroplus.mk
