@@ -56,7 +56,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/aosp/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/aosp/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
-    vendor/aosp/prebuilt/common/bin/50-xy.sh:system/addon.d/50-xy.sh
+    vendor/aosp/prebuilt/common/bin/50-xy.sh:system/addon.d/50-xy.sh \
+    vendor/aosp/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 
 # Version information used on all builds
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=JOP40D BUILD_VERSION_TAGS=release-keys USER=android-build BUILD_EST_DATE=$(shell date +"%s")
