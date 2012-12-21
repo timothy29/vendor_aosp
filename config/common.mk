@@ -82,7 +82,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
         SuperSU \
         Torch \
-        Xylonpapers
+        XYPapers
 
 # Blobs common to all devices
 PRODUCT_COPY_FILES += \
