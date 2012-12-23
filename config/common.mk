@@ -83,7 +83,8 @@ PRODUCT_PACKAGES += \
         SnapBlack \
         SuperSU \
         Torch \
-        XYPapers
+        XYPapers \
+        XYSettings
 
 # Blobs common to all devices
 PRODUCT_COPY_FILES += \
