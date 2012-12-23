@@ -5,7 +5,7 @@ PRODUCT_DEVICE := generic
 
 # Build Properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.xylon.version=$(TARGET_PRODUCT)_013_$(shell date +"%m-%d-%Y")
+    ro.xylon.version=$(TARGET_PRODUCT)_014_$(shell date +"%m-%d-%Y")
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/common
 
@@ -80,6 +80,7 @@ PRODUCT_PACKAGES += \
 
 # Xylon Packages
 PRODUCT_PACKAGES += \
+        SnapBlack \
         SuperSU \
         Torch \
         XYPapers
