@@ -15,8 +15,8 @@ PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=yakju BUILD_ID=JOP40C BUILD_FINGERPRINT=google/yakju/toro:4.2/JOP40C/527662:user/release-keys PRIVATE_BUILD_DESC="yakju-user 4.2 JOP40C 527662 release-keys" BUILD_NUMBER=527662
 
-# Tuna Overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/tuna
+# Toro Overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/toro
 
 # Copy toro specific prebuilt files
 PRODUCT_COPY_FILES +=  \

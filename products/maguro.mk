@@ -7,8 +7,8 @@ $(call inherit-product, device/samsung/maguro/full_maguro.mk)
 # Inherit common product files.
 $(call inherit-product, vendor/aosp/config/common.mk)
 
-# Tuna Overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/tuna
+# Maguro Overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/maguro
 
 # Setup device specific product configuration.
 PRODUCT_NAME := xylon_maguro

@@ -15,8 +15,8 @@ PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=mysidspr BUILD_FINGERPRINT="samsung/mysidspr/toroplus:4.1.1/JRO03U/L700FH05:user/release-keys" PRIVATE_BUILD_DESC="mysidspr-user 4.1.1 JRO03U L700FH05 release-keys"
 
-# Tuna Overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/tuna
+# Toroplus Overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/toroplus
 
 # Copy toro specific prebuilt files
 PRODUCT_COPY_FILES +=  \

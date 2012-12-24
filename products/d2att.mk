@@ -19,7 +19,7 @@ PRODUCT_MANUFACTURER := Samsung
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=d2att TARGET_DEVICE=d2att BUILD_FINGERPRINT="d2att-user 4.1.2 JZO54K I747UCALEM release-keys" PRIVATE_BUILD_DESC="samsung/d2att/d2att:4.1.2/JZO54K/I747UCALEM:user/release-keys"
 
 # Mako Overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/d2att
+PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/toro
 
 # Copy mako specific prebuilt files
 PRODUCT_COPY_FILES +=  \
