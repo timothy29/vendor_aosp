@@ -42,7 +42,7 @@ DATE = $(shell vendor/aosp/tools/getdate)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.xylon.version=$(TARGET_PRODUCT)-official-014beta2 \
-    ro.modversion=$(TARGET_PRODUCT)_014-2_$(DATE)
+    ro.modversion=$(TARGET_PRODUCT)_014_B2_$(DATE)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
