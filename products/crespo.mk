@@ -1,13 +1,13 @@
-## Specify phone tech before including full_phone
-$(call inherit-product, vendor/aosp/config/common_phone.mk)
-
-# Inherit AOSP device configuration for maguro.
+# Inherit AOSP device configuration for crespo.
 $(call inherit-product, device/samsung/crespo/full_crespo.mk)
 
 # Inherit common product files.
 $(call inherit-product, vendor/aosp/config/common.mk)
 
-# Tuna Overlay
+# Inherit GSM common stuff
+$(call inherit-product, vendor/aosp/config/gsm.mk)
+
+# Crespo Overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/crespo
 
 # Setup device specific product configuration.

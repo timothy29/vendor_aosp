@@ -1,13 +1,14 @@
-## Specify phone tech before including full_phone
-$(call inherit-product, vendor/aosp/config/common_phone.mk)
-
 # Inherit AOSP device configuration for mako.
 $(call inherit-product, device/lge/mako/full_mako.mk)
 
 # Inherit common product files.
 $(call inherit-product, vendor/aosp/config/common.mk)
 
-# Inherit fnv specific configurations
+# Inherit GSM common stuff
+$(call inherit-product, vendor/aosp/config/gsm.mk)
+
+# Mako Overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/mako
 
 # Setup device specific product configuration.
 PRODUCT_NAME := xylon_mako
@@ -16,10 +17,7 @@ PRODUCT_DEVICE := mako
 PRODUCT_MODEL := Nexus 4
 PRODUCT_MANUFACTURER := LGE
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=occam TARGET_DEVICE=mako BUILD_FINGERPRINT=google/occam/mako:4.2/JOP40C/527662:user/release-keys PRIVATE_BUILD_DESC="occam-user 4.2 JOP40C 527662 release-keys"
-
-# Mako Overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/mako
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=occam TARGET_DEVICE=mako BUILD_FINGERPRINT=google/occam/mako:4.2.1/JOP40D/533553:user/release-keys PRIVATE_BUILD_DESC="occam-user 4.2.1 JOP40D 533553 release-keys"
 
 # Copy mako specific prebuilt files
 PRODUCT_COPY_FILES +=  \

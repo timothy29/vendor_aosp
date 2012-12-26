@@ -1,10 +1,14 @@
-# Inherit AOSP device configuration for toro.
+# Inherit AOSP device configuration for toroplus.
 $(call inherit-product, device/samsung/toroplus/full_toroplus.mk)
 
 # Inherit common product files.
 $(call inherit-product, vendor/aosp/config/common.mk)
 
-# Inherit fnv specific configurations
+# Inherit CDMA common stuff
+$(call inherit-product, vendor/aosp/config/cdma.mk)
+
+# Toroplus Overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/toroplus
 
 # Setup device specific product configuration.
 PRODUCT_NAME := xylon_toroplus
@@ -14,9 +18,6 @@ PRODUCT_MODEL := Galaxy Nexus
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=mysidspr BUILD_FINGERPRINT="samsung/mysidspr/toroplus:4.1.1/JRO03U/L700FH05:user/release-keys" PRIVATE_BUILD_DESC="mysidspr-user 4.1.1 JRO03U L700FH05 release-keys"
-
-# Toroplus Overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/toroplus
 
 # Copy toro specific prebuilt files
 PRODUCT_COPY_FILES +=  \
