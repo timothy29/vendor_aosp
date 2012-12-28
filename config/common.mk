@@ -8,9 +8,6 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/common
 # T-Mobile theme engine
 include vendor/aosp/config/themes_common.mk
 
-# Build.prop Modifications, Tweaks, blah.
-include vendor/aosp/config/buildprop_common.mk
-
 # Bring in all audio files
 include frameworks/base/data/sounds/NewAudio.mk
 
@@ -27,6 +24,10 @@ PRODUCT_COPY_FILES += \
     vendor/aosp/prebuilt/common/bin/50-xy.sh:system/addon.d/50-xy.sh \
     vendor/aosp/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 
+## Build Information Properties
+
+DATE = $(shell vendor/aosp/tools/getdate)
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
@@ -34,13 +35,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.error.receiver.system.apps=com.google.android.feedback \
     ro.com.google.locationfeatures=1 \
-    ro.setupwizard.enterprise_mode=1
-
-## Build Information Properties
-
-DATE = $(shell vendor/aosp/tools/getdate)
-
-PRODUCT_PROPERTY_OVERRIDES += \
+    ro.setupwizard.enterprise_mode=1 \
     ro.xylon.version=$(TARGET_PRODUCT)-official-014beta2 \
     ro.modversion=$(TARGET_PRODUCT)_014_B2_$(DATE)
 
@@ -48,6 +43,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 # Version information used on all builds
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=JOP40D BUILD_VERSION_TAGS=release-keys USER=android-build BUILD_EST_DATE=$(shell date +"%s")
+
+# Build.prop Modifications, Tweaks, blah.
+include vendor/aosp/config/buildprop_common.mk
 
 # CyanogenMod Packages
 PRODUCT_PACKAGES += \
