@@ -37,7 +37,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     net.tcp.buffersize.gprs=4096,87380,256960,4096,16384,256960 \
     net.tcp.buffersize.edge=4096,87380,256960,4096,16384,256960
 
- Misc Files & init.d files
+# Misc Files & init.d files
 PRODUCT_COPY_FILES +=  \
     vendor/aosp/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
     vendor/aosp/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf \
