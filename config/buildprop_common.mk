@@ -1,6 +1,5 @@
 # Build.Prop Tweaks
 PRODUCT_PROPERTY_OVERRIDES += \
-    wifi.supplicant_scan_interval=180 \
     ro.kernel.android.checkjni=0 \
     windowsmgr.max_events_per_sec=280 \
     net.bt.name=Android \
@@ -38,14 +37,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     net.tcp.buffersize.gprs=4096,87380,256960,4096,16384,256960 \
     net.tcp.buffersize.edge=4096,87380,256960,4096,16384,256960
 
-# Misc Files & init.d files
+ Misc Files & init.d files
 PRODUCT_COPY_FILES +=  \
     vendor/aosp/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
     vendor/aosp/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf \
-    vendor/aosp/prebuilt/common/etc/init.d/00fnv:system/etc/init.d/00fnv \
-    vendor/aosp/prebuilt/common/etc/init.d/01cherrybomb:system/etc/init.d/01cherrybomb \
-    vendor/aosp/prebuilt/common/etc/init.d/09cron:system/etc/init.d/09cron \
-    vendor/aosp/prebuilt/common/etc/init.d/98fruit:system/etc/init.d/98fruit \
     vendor/aosp/prebuilt/common/etc/init.local.rc:root/init.xylon.rc \
     vendor/aosp/prebuilt/common/bin/sysinit:system/bin/sysinit
 
@@ -54,6 +49,5 @@ PRODUCT_COPY_FILES +=  \
     vendor/aosp/prebuilt/common/lib/libgtalk_jni.so:system/lib/libgtalk_jni.so \
     vendor/aosp/prebuilt/common/lib/libgtalk_stabilize.so:system/lib/libgtalk_stabilize.so \
     vendor/aosp/prebuilt/common/lib/libjni_filtershow_filters.so:system/lib/libjni_filtershow_filters.so \
-    vendor/aosp/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so \
     vendor/aosp/prebuilt/common/lib/libjni_mosaic.so:system/lib/libjni_mosaic.so \
     vendor/aosp/prebuilt/common/lib/liblightcycle.so:system/lib/liblightcycle.so
