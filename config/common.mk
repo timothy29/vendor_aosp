@@ -50,6 +50,7 @@ include vendor/aosp/config/buildprop_common.mk
 # CyanogenMod Packages
 PRODUCT_PACKAGES += \
         CMFileManager \
+        LockClock \
 	DSPManager \
         libcyanogen-dsp \
         audio_effects.conf
