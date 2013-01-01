@@ -3,5 +3,6 @@ add_lunch_combo xylon_d2att-userdebug
 add_lunch_combo xylon_grouper-userdebug
 add_lunch_combo xylon_maguro-userdebug
 add_lunch_combo xylon_mako-userdebug
+add_lunch_combo xylon_tilapia-userdebug
 add_lunch_combo xylon_toro-userdebug
 add_lunch_combo xylon_toroplus-userdebug

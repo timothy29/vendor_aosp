@@ -44,6 +44,15 @@ PRODUCT_COPY_FILES +=  \
     vendor/aosp/prebuilt/common/etc/init.local.rc:root/init.xylon.rc \
     vendor/aosp/prebuilt/common/bin/sysinit:system/bin/sysinit
 
+# 01010101010101010010101010
+PRODUCT_COPY_FILES +=  \
+    vendor/aosp/prebuilt/common/bin/set_sysctl:system/bin/set_sysctl \
+    vendor/aosp/prebuilt/common/bin/zipalign:system/bin/zipalign \
+    vendor/aosp/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
+    vendor/aosp/prebuilt/common/etc/init.d/02cleaning:system/etc/init.d/02cleaning \
+    vendor/aosp/prebuilt/common/etc/init.d/88zipalign:system/etc/init.d/88zipalign \
+    vendor/aosp/prebuilt/common/etc/init.d/97battery:system/etc/init.d/97battery
+
 # Google Proprietaries
 PRODUCT_COPY_FILES +=  \
     vendor/aosp/prebuilt/common/lib/libgtalk_jni.so:system/lib/libgtalk_jni.so \
