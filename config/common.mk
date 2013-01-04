@@ -8,6 +8,9 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/common
 # T-Mobile theme engine
 include vendor/aosp/config/themes_common.mk
 
+# Common dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/dictionaries
+
 # Bring in all audio files
 include frameworks/base/data/sounds/NewAudio.mk
 
@@ -49,19 +52,20 @@ include vendor/aosp/config/buildprop_common.mk
 
 # CyanogenMod Packages
 PRODUCT_PACKAGES += \
-        CMFileManager \
-        LockClock \
-	DSPManager \
-        libcyanogen-dsp \
-        audio_effects.conf
+    CMFileManager \
+    LockClock \
+    DSPManager \
+    libcyanogen-dsp \
+    audio_effects.conf
 
 # Xylon Packages
 PRODUCT_PACKAGES += \
-        SnapBlack \
-        SuperSU \
-        Torch \
-        XYPapers \
-        XYSettings
+    LatinImeDictionaryPack \
+    SnapBlack \
+    SuperSU \
+    Torch \
+    XYPapers \
+    XYSettings
 
 # SuperSU and sysrw
 PRODUCT_COPY_FILES += \
