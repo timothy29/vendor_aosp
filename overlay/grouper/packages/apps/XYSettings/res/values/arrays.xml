@@ -33,10 +33,8 @@
         <item>BATTERY</item>
         <item>AIRPLANE_MODE</item>
         <item>BLUETOOTH</item>
-        <item>VIBRATE</item>
         <item>SILENT</item>
         <item>SYNC</item>
-        <item>FCHARGE</item>
         <item>NFC</item>
         <item>SCREEN</item>
     </string-array>
@@ -54,10 +52,8 @@
         <item>@string/toggle_battery</item>
         <item>@string/toggle_airplane_mode</item>
         <item>@string/toggle_bluetooth</item>
-        <item>@string/toggle_vibrate</item>
         <item>@string/toggle_silent</item>
         <item>@string/toggle_sync</item>
-        <item>@string/toggle_fcharge</item>
         <item>@string/toggle_nfc</item>
         <item>@string/toggle_screen</item>
     </string-array>
