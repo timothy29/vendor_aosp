@@ -37,14 +37,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     net.tcp.buffersize.gprs=4096,87380,256960,4096,16384,256960 \
     net.tcp.buffersize.edge=4096,87380,256960,4096,16384,256960
 
-## Vanir RNGD Tweaks
-
-#RNGD MODS
-PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/etc/init.d/98SONIC_SHOCK:system/etc/init.d/98SONIC_SHOCK \
-    vendor/aosp/prebuilt/common/xbin/vanirentropy:system/xbin/vanirentropy \
-    vendor/aosp/prebuilt/common/xbin/rngd:system/xbin/rngd
-
 # Misc Files & init.d files
 PRODUCT_COPY_FILES +=  \
     vendor/aosp/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
