@@ -39,8 +39,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.error.receiver.system.apps=com.google.android.feedback \
     ro.com.google.locationfeatures=1 \
     ro.setupwizard.enterprise_mode=1 \
-    ro.xylon.version=$(TARGET_PRODUCT)-official-015 \
-    ro.modversion=$(TARGET_PRODUCT)_015_$(DATE)
+    ro.xylon.version=$(TARGET_PRODUCT)-official-016_B1 \
+    ro.modversion=$(TARGET_PRODUCT)_016_B1_$(DATE)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
