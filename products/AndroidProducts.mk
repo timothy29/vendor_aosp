@@ -6,4 +6,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/mako.mk \
     $(LOCAL_DIR)/tilapia.mk \
     $(LOCAL_DIR)/toro.mk \
-    $(LOCAL_DIR)/toroplus.mk
+    $(LOCAL_DIR)/toroplus.mk \
+    $(LOCAL_DIR)/i9100g.mk \
+    $(LOCAL_DIR)/i9300.mk
