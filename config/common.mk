@@ -29,7 +29,7 @@ PRODUCT_COPY_FILES += \
 
 ## Build Information Properties
 
-DATE = $(shell vendor/aosp/tools/getdate)
+include vendor/aosp/config/version.mk
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
@@ -38,9 +38,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.error.receiver.system.apps=com.google.android.feedback \
     ro.com.google.locationfeatures=1 \
-    ro.setupwizard.enterprise_mode=1 \
-    ro.xylon.version=$(TARGET_PRODUCT)-official-016_B1 \
-    ro.modversion=$(TARGET_PRODUCT)_016_B1_$(DATE)
+    ro.setupwizard.enterprise_mode=1
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
