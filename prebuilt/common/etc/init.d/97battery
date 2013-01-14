@@ -5,31 +5,24 @@
 #
 
 log=/data/xy/battery.log
-bb="/system/xbin/busybox"
 
-#if [ -e $LOG_FILE ]; then
-#	rm $LOG_FILE;
-#fi;
-
-$bb echo "";
-exec >>$log 2>&1
-$bb date >>$log
-
-$bb echo "-------------------------------------------------------------";
-echo "Starting Battery Check $( date +"%m-%d-%Y %H:%M:%S" )";
+echo " " | tee -a $log
+echo "-------------------------------------------------------------" | tee -a $log
+echo "Starting Battery-calibration $( date +"%m-%d-%Y %H:%M:%S" )" | tee -a $log
 
 LEVEL=`cat /sys/class/power_supply/battery/capacity`;
 CURR_ADC=`cat /sys/class/power_supply/battery/voltage_now`;
 BATTFULL=`cat /sys/class/power_supply/battery/status`;
 
-$bb echo "*** LEVEL: $LEVEL - CUR: $CURR_ADC - STATUS: $BATTFULL ***";
+echo "*** LEVEL: $LEVEL - CUR: $CURR_ADC - STATUS: $BATTFULL ***" | tee -a $log
 
 if [ "$LEVEL" == "100" ] && [ "$BATTFULL" == "Full" ]; then
- $bb rm -f /data/system/batterystats.bin;
- $bb echo "Battery-calibration done ...";
+    rm -f /data/system/batterystats.bin;
+    echo "Battery-calibration done ..." | tee -a $log
 fi;
 
-$bb echo "Battery Check finished at $( date +"%m-%d-%Y %H:%M:%S" )";
-$bb echo "-------------------------------------------------------------";
+echo "Battery-calibration finished at $( date +"%m-%d-%Y %H:%M:%S" )" | tee -a $log
+echo "-------------------------------------------------------------" | tee -a $log
+echo " " | tee -a $log
 
 exit
