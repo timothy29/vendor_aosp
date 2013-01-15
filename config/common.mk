@@ -54,7 +54,8 @@ PRODUCT_PACKAGES += \
     LockClock \
     DSPManager \
     libcyanogen-dsp \
-    audio_effects.conf
+    audio_effects.conf \
+    Apollo
 
 # Xylon Packages
 PRODUCT_PACKAGES += \
