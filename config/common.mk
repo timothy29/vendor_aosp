@@ -21,14 +21,13 @@ include frameworks/base/data/sounds/AudioPackageNewWave.mk
 $(call inherit-product, frameworks/base/data/videos/VideoPackage2.mk)
 
 # Backup Tool
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     vendor/aosp/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/aosp/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
     vendor/aosp/prebuilt/common/bin/50-xy.sh:system/addon.d/50-xy.sh \
     vendor/aosp/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 
-## Build Information Properties
-
+# Build Information Properties
 include vendor/aosp/config/version.mk
 
 PRODUCT_PROPERTY_OVERRIDES += \
