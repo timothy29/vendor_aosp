@@ -21,14 +21,13 @@ include frameworks/base/data/sounds/AudioPackageNewWave.mk
 $(call inherit-product, frameworks/base/data/videos/VideoPackage2.mk)
 
 # Backup Tool
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     vendor/aosp/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/aosp/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
     vendor/aosp/prebuilt/common/bin/50-xy.sh:system/addon.d/50-xy.sh \
     vendor/aosp/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 
-## Build Information Properties
-
+# Build Information Properties
 include vendor/aosp/config/version.mk
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -38,7 +37,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.error.receiver.system.apps=com.google.android.feedback \
     ro.com.google.locationfeatures=1 \
-    ro.setupwizard.enterprise_mode=1
+    ro.setupwizard.enterprise_mode=1 \
+    ro.modversion=$(TARGET_PRODUCT)_014_B3_$(DATE) \
+    ro.xylon.modname=xylon-aosp \
+    ro.xylon.builtdate=$(DATE)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
@@ -64,7 +66,8 @@ PRODUCT_PACKAGES += \
     SuperSU \
     Torch \
     XYPapers \
-    XYSettings
+    XYSettings \
+    XYStats
 
 # SuperSU and sysrw
 PRODUCT_COPY_FILES += \
