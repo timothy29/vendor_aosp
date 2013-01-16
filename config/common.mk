@@ -37,7 +37,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.error.receiver.system.apps=com.google.android.feedback \
     ro.com.google.locationfeatures=1 \
-    ro.setupwizard.enterprise_mode=1
+    ro.setupwizard.enterprise_mode=1 \
+    ro.modversion=$(TARGET_PRODUCT)_014_B3_$(DATE) \
+    ro.xylon.modname=xylon-aosp \
+    ro.xylon.builtdate=$(DATE)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
@@ -53,7 +56,8 @@ PRODUCT_PACKAGES += \
     LockClock \
     DSPManager \
     libcyanogen-dsp \
-    audio_effects.conf
+    audio_effects.conf \
+    Apollo
 
 # Xylon Packages
 PRODUCT_PACKAGES += \
