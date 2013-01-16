@@ -1,5 +1,5 @@
 ## XYAOSP Version prop ##
-DATE = $(shell vendor/aosp/tools/getdate)
+DATE = $(shell date -u +%Y%m%d)
 
 # For System Information & Build zip name
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -8,8 +8,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # For XYStats
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.xylon.isitrom= \
-    ro.xylon.modname= \
-    ro.xylon.modversion= \
-    ro.xylon.device= \
-    ro.xylon.builtdate=
+    ro.xylon.isitrom=Xylon \
+    ro.xylon.modname=Xylon \
+    ro.xylon.modversion=Official_016 \
+    ro.xylon.device=$(TARGET_PRODUCT) \
+    ro.xylon.builtdate=$(DATE)

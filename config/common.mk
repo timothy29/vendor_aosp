@@ -62,7 +62,8 @@ PRODUCT_PACKAGES += \
     SuperSU \
     Torch \
     XYPapers \
-    XYSettings
+    XYSettings \
+    XYStats
 
 # SuperSU and sysrw
 PRODUCT_COPY_FILES += \
