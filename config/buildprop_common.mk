@@ -2,7 +2,6 @@
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.android.checkjni=0 \
     windowsmgr.max_events_per_sec=280 \
-    net.bt.name=Android \
     dalvik.vm.heapstartsize=8m \
     dalvik.vm.heapgrowthlimit=96m \
     dalvik.vm.heapsize=256m \
@@ -16,7 +15,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.hw=1 \
     debug.performance.tuning=1 \
     video.accelerate.hw=1 \
-    pm.sleep_mode=1 \
     ro.HOME_APP_ADJ=1 \
     ro.media.dec.jpeg.memcap=8000000 \
     ro.media.enc.hprof.vid.bps=8000000 \
@@ -24,15 +22,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.media.enc.jpeg.quality=100 \
     debug.composition.type=gpu \
     ro.telephony.call_ring.delay=500 \
-    ro.max.fling_velocity=12000 \
-    ro.min.fling_velocity=8000 \
     ro.lge.proximity.delay=25 \
-    mot.proximity.delay=25 \
-    net.tcp.buffersize.default=4096,87380,256960,4096,16384,256960 \
-    net.tcp.buffersize.wifi=4096,87380,256960,4096,16384,256960 \
-    net.tcp.buffersize.umts=4096,87380,256960,4096,16384,256960 \
-    net.tcp.buffersize.gprs=4096,87380,256960,4096,16384,256960 \
-    net.tcp.buffersize.edge=4096,87380,256960,4096,16384,256960
+    mot.proximity.delay=25
 
 # Misc Files & init.d files
 PRODUCT_COPY_FILES +=  \
