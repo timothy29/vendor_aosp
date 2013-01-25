@@ -48,7 +48,7 @@ PRODUCT_COPY_FILES +=  \
     vendor/aosp/prebuilt/common/bin/seeder:system/bin/seeder \
     vendor/aosp/prebuilt/common/etc/init.d/99rngd:system/etc/init.d/99rngd \
     vendor/aosp/prebuilt/common/xbin/entro:system/xbin/entro \
-    vendor/aosp/prebuilt/common/xbin/rngd:system/xbin/rngd \
+    vendor/aosp/prebuilt/common/xbin/rngd:system/xbin/rngd
 
 # Google Proprietaries
 PRODUCT_COPY_FILES +=  \
