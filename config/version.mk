@@ -3,13 +3,13 @@ DATE = $(shell date -u +%Y%m%d)
 
 # For System Information & Build zip name
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.xylon.version=$(TARGET_PRODUCT)-official-017-1 \
-    ro.modversion=$(TARGET_PRODUCT)_017-1_$(DATE)
+    ro.xylon.version=$(TARGET_PRODUCT)-official-018 \
+    ro.modversion=$(TARGET_PRODUCT)_018_$(DATE)
 
 # For XYStats
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.xylon.isitrom=Xylon \
     ro.xylon.modname=xylon-aosp \
-    ro.xylon.modversion=Official_017-1 \
+    ro.xylon.modversion=Official_018 \
     ro.xylon.device=$(TARGET_PRODUCT) \
     ro.xylon.builtdate=$(DATE)
