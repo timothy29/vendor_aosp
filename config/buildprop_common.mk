@@ -34,13 +34,11 @@ PRODUCT_COPY_FILES +=  \
 
 # 01010101010101010010101010
 PRODUCT_COPY_FILES +=  \
-    vendor/aosp/prebuilt/common/bin/zipalign:system/bin/zipalign \
     vendor/aosp/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
     vendor/aosp/prebuilt/common/etc/init.d/00fnvxy:system/etc/init.d/00fnvxy \
     vendor/aosp/prebuilt/common/etc/init.d/01cherrybomb:system/etc/init.d/01cherrybomb \
     vendor/aosp/prebuilt/common/etc/init.d/02cleaning:system/etc/init.d/02cleaning \
     vendor/aosp/prebuilt/common/etc/init.d/09cron:system/etc/init.d/09cron \
-    vendor/aosp/prebuilt/common/etc/init.d/88zipalign:system/etc/init.d/88zipalign \
     vendor/aosp/prebuilt/common/etc/init.d/98fruit:system/etc/init.d/98fruit
 
 # Bring 'em battery drainer
