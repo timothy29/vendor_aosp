@@ -5,13 +5,23 @@
 sync
 sysrw
 
+# IO Tweaks
+BLOCK_DEVS=`ls -d /sys/block/mmc*`;
+BLOCK_DEVS="$BLOCK_DEVS `ls -d /sys/block/mtd*`";
+BLOCK_DEVS="$BLOCK_DEVS `ls -d /sys/block/dm-*`";
+
+for i in $BLOCK_DEVS;
+do
+    echo "0" > $i/queue/rotational; 
+    echo "16" > $i/queue/iosched/fifo_batch;
+    echo "256" > $i/queue/max_sectors_kb;
+done;
+
 # Enable Sysctl Tweaks
 sysctl -p /system/etc/sysctl.conf
 
 # Set SD Card Cache
-if [ -e /sys/devices/virtual/bdi/179:0/read_ahead_kb ]; then
-echo "2048" > /sys/devices/virtual/bdi/179:0/read_ahead_kb
-fi
+echo "2048" > /sys/devices/virtual/bdi/179:0/read_ahead_kb;
 
 # Breaking the lease
 echo "15" > /proc/sys/fs/lease-break-time
