@@ -24,11 +24,11 @@ $(call inherit-product, frameworks/base/data/videos/VideoPackage2.mk)
 
 # Blobs necessary for drm
 PRODUCT_COPY_FILES +=  \
-   vendor/fnv/proprietary/common/lib/libfrsdk.so:system/lib/libfrsdk.so \
-   vendor/fnv/proprietary/common/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
-   vendor/fnv/proprietary/common/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
-   vendor/fnv/proprietary/common/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
-   vendor/fnv/proprietary/common/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so 
+   vendor/aosp/prebuilt/common/lib/libfrsdk.so:system/lib/libfrsdk.so \
+   vendor/aosp/prebuilt/common/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
+   vendor/aosp/prebuilt/common/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
+   vendor/aosp/prebuilt/common/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
+   vendor/aosp/prebuilt/common/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so 
 
 # Build Information Properties
 include vendor/aosp/config/version.mk
