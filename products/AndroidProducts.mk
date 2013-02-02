@@ -9,4 +9,4 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/toroplus.mk \
     $(LOCAL_DIR)/i9100g.mk \
     $(LOCAL_DIR)/i9300.mk \
-    $(LOCAL_DIR)/p3100.mk \
+    $(LOCAL_DIR)/p3100.mk
