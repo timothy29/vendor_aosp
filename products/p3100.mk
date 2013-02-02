@@ -5,7 +5,7 @@ $(call inherit-product, device/samsung/p3100/full_p3100.mk)
 $(call inherit-product, vendor/aosp/config/common.mk)
 
 # GT-P3100 Overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/tilapia
+PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/p3100
 
 # Inherit GSM common stuff
 $(call inherit-product, vendor/aosp/config/gsm.mk)
