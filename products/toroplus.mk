@@ -8,7 +8,7 @@ $(call inherit-product, vendor/aosp/config/common.mk)
 $(call inherit-product, vendor/aosp/config/cdma.mk)
 
 # Toroplus Overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/toroplus
+PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/tuna
 
 # Setup device specific product configuration.
 PRODUCT_NAME := xylon_toroplus
