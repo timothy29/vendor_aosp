@@ -24,7 +24,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=nakasig BUILD_ID=JOP40D BUILD_FINGE
 
 # Copy maguro specific prebuilt files
 PRODUCT_COPY_FILES +=  \
-    vendor/aosp/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip \
+    vendor/aosp/prebuilt/bootanimation/bootanimation_1280_800.zip:system/media/bootanimation.zip \
     vendor/aosp/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
     vendor/aosp/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
