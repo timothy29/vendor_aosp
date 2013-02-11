@@ -61,6 +61,7 @@ PRODUCT_PACKAGES += \
 # Xylon Packages
 PRODUCT_PACKAGES += \
     LatinImeDictionaryPack \
+    Music \
     SnapBlack \
     SuperSU \
     Torch \
