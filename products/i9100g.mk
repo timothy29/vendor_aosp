@@ -20,7 +20,7 @@ $(call inherit-product, vendor/aosp/config/gsm.mk)
 # Release name
 PRODUCT_RELEASE_NAME := GT-I9100G
 
-# Inherit some common CM stuff.
+# Inherit some common XY stuff.
 $(call inherit-product, vendor/aosp/config/common.mk)
 
 # Inherit device configuration
@@ -33,8 +33,9 @@ PRODUCT_BRAND := samsung
 PRODUCT_MODEL := GT-I9100G
 PRODUCT_MANUFACTURER := samsung
 
-#Set build fingerprint / ID / Prduct Name ect.
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=GT-I9100G TARGET_DEVICE=GT-I9100G BUILD_FINGERPRINT=samsung/GT-I9100G/GT-I9100G:4.0.3/IML74K/XXLPQ:user/release-keys PRIVATE_BUILD_DESC="GT-I9100G-user 4.0.3 IML74K XXLPQ release-keys"
+# Set build fingerprint / ID / Product Name ect.
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=GT-I9100G TARGET_DEVICE=GT-I9100G BUILD_FINGERPRINT=samsung/GT-I9100G/GT-I9100G:4.1.2/JZO54K/XXLPQ:user/release-keys PRIVATE_BUILD_DESC="GT-I9100G-user 4.1.2 JZO54K XXLPQ release-keys"
+PRODUCT_RELEASE_NAME := GT-I9100G
 
 # Copy maguro specific prebuilt files
 PRODUCT_COPY_FILES +=  \
