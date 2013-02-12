@@ -30,5 +30,10 @@ PRODUCT_COPY_FILES +=  \
 
 # Some needed packages
 PRODUCT_PACKAGES += \
-    Mms
+    Mms \
+    Stk
+
+# System dump APN config
+PRODUCT_COPY_FILES += \
+    device/asus/tilapia/system/etc/apns-conf.xml:system/etc/apns-conf.xml
 
