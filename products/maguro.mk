@@ -17,7 +17,10 @@ PRODUCT_DEVICE := maguro
 PRODUCT_MODEL := Galaxy Nexus
 PRODUCT_MANUFACTURER := samsung
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=yakju BUILD_ID=JOP40D BUILD_FINGERPRINT="google/yakju/maguro:4.2.1/JOP40D/533553:user/release-keys" PRIVATE_BUILD_DESC="yakju-user 4.2.1 JOP40D 533553 release-keys" BUILD_NUMBER=533553
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=takju BUILD_ID=JDQ39 BUILD_FINGERPRINT="google/takju/maguro:4.2.2/JDQ39/573038:user/release-keys" PRIVATE_BUILD_DESC="takju-user 4.2.2 JDQ39 573038 release-keys" BUILD_NUMBER=573038
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.google.mcc_fallback=262
 
 # Copy maguro specific prebuilt files
 PRODUCT_COPY_FILES +=  \
