@@ -22,6 +22,9 @@ $(call inherit-product, frameworks/base/data/videos/VideoPackage2.mk)
 #    vendor/aosp/prebuilt/common/bin/50-xy.sh:system/addon.d/50-xy.sh \
 #    vendor/aosp/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 
+# Enable ADB authentication
+ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
+
 # Blobs necessary for drm
 PRODUCT_COPY_FILES +=  \
    vendor/aosp/prebuilt/common/lib/libfrsdk.so:system/lib/libfrsdk.so \
