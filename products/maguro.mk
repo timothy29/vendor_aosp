@@ -7,6 +7,9 @@ $(call inherit-product, vendor/aosp/config/common.mk)
 # Inherit GSM common stuff
 $(call inherit-product, vendor/aosp/config/gsm.mk)
 
+# Inherit Tuna common stuff
+$(call inherit-product, vendor/aosp/config/tuna.mk)
+
 # Maguro Overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/tuna
 

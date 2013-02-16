@@ -1,13 +1,23 @@
 #!/system/bin/sh
 #
-# A XY Script to:
-# Clean the "Folletto Style"
-#
+# Move dalvik-cache to /cache and Vacuum Databases
 
-rm -f /data/tombstones/*;
-rm -f /data/anr/*;
-rm -f /cache/*.apk;
-rm -f /cache/*.tmp;
-rm -f /data/system/dropbox/*;
-rm -f /data/dalvik-cache/*.apk;
-rm -f /data/dalvik-cache/*.tmp;
+if [ ! -d /cache/dalvik-cache ]
+then
+	busybox rm -rf /cache/dalvik-cache /data/dalvik-cache
+	mkdir /cache/dalvik-cache /data/dalvik-cache
+fi
+
+busybox chown 1000:1000 /cache/dalvik-cache
+busybox chmod 0771 /cache/dalvik-cache
+
+# bind mount dalvik-cache so we can still boot without the sdcard
+busybox mount -o bind /cache/dalvik-cache /data/dalvik-cache
+busybox chown 1000:1000 /data/dalvik-cache
+busybox chmod 0771 /data/dalvik-cache
+
+for i in \
+`find /data -iname "*.db"`
+do \
+sqlite3 $i 'VACUUM;'; 
+done
