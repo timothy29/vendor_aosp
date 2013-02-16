@@ -23,9 +23,6 @@ sysctl -p /system/etc/sysctl.conf
 # Set SD Card Cache
 echo "2432" > /sys/devices/virtual/bdi/179:0/read_ahead_kb;
 
-# Remounting the file systems with noatime and nodiratime flags to save battery and CPU cycles
-mount -o remount,noauto_da_alloc,nosuid,nodev,noatime,nodiratime /data /data
-
 # Breaking the lease
 echo "15" > /proc/sys/fs/lease-break-time
 
@@ -47,11 +44,6 @@ echo "4096 87380 404480" > /proc/sys/net/ipv4/tcp_rmem;
 setprop net.tcp.buffersize.default 4096,87380,404480,4096,16384,404480;
 setprop net.tcp.buffersize.wifi 4096,87380,404480,4096,16384,404480;
 setprop net.tcp.buffersize.umts 4096,87380,404480,4096,16384,404480;
-
-# Sqlite Database Tweaks
-for i in `busybox find /d* -iname "*.db"`; do
-	sqlite3 $i 'VACUUM;';
-	sqlite3 $i 'REINDEX;';
 
 sync
 sysro
