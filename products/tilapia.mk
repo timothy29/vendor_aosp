@@ -5,7 +5,7 @@ $(call inherit-product, device/asus/tilapia/full_tilapia.mk)
 $(call inherit-product, vendor/aosp/config/common.mk)
 
 # Tilapia Overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/tilapia
+PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/grouper
 
 # Inherit GSM common stuff
 $(call inherit-product, vendor/aosp/config/gsm.mk)
