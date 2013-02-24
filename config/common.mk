@@ -69,3 +69,7 @@ PRODUCT_COPY_FILES += \
     vendor/aosp/prebuilt/common/xbin/su:system/xbin/su \
     vendor/aosp/prebuilt/common/xbin/sysrw:system/xbin/sysrw \
     vendor/aosp/prebuilt/common/xbin/sysro:system/xbin/sysro
+
+# Special Ringtone
+PRODUCT_COPY_FILES += \
+    vendor/aosp/prebuilt/common/media/Xylonize.mp3:system/media/audio/ringtone/Xylonize.mp3
