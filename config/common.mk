@@ -72,4 +72,4 @@ PRODUCT_COPY_FILES += \
 
 # Special Ringtone
 PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/media/Xylonize.mp3:system/media/audio/ringtone/Xylonize.mp3
+    vendor/aosp/prebuilt/common/media/Xylonize.mp3:system/media/audio/ringtones/Xylonize.mp3
