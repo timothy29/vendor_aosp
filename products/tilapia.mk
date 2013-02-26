@@ -31,6 +31,7 @@ PRODUCT_COPY_FILES +=  \
 # Some needed packages
 PRODUCT_PACKAGES += \
     Mms \
+    Phone \
     Stk
 
 # System dump APN config
