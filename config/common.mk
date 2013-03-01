@@ -53,12 +53,17 @@ PRODUCT_PACKAGES += \
     libcyanogen-dsp \
     audio_effects.conf
 
+# Superuser Packages
+SUPERUSER_PACKAGE := com.koushaosp.superuser
+
+PRODUCT_PACKAGES += \
+    Superuser
+
 # Xylon Packages
 PRODUCT_PACKAGES += \
     LatinImeDictionaryPack \
     Music \
     SnapBlack \
-    SuperSU \
     Torch \
     XYPapers \
     XYSettings \
@@ -66,7 +71,6 @@ PRODUCT_PACKAGES += \
 
 # SuperSU and sysrw
 PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/xbin/su:system/xbin/su \
     vendor/aosp/prebuilt/common/xbin/sysrw:system/xbin/sysrw \
     vendor/aosp/prebuilt/common/xbin/sysro:system/xbin/sysro
 

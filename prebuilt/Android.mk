@@ -18,16 +18,6 @@ LOCAL_PATH := $(call my-dir)
 # Prebuilt APKs
 #
 include $(CLEAR_VARS)
-LOCAL_MODULE := SuperSU
-LOCAL_MODULE_OWNER := aosp
-LOCAL_SRC_FILES := common/app/$(LOCAL_MODULE).apk
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := PRESIGNED
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := Music
 LOCAL_MODULE_OWNER := ronamadeo
 LOCAL_SRC_FILES := common/app/$(LOCAL_MODULE).apk
