@@ -5,17 +5,19 @@
 sync
 sysrw
 
-# IO Tweaks
-BLOCK_DEVS=`ls -d /sys/block/mmc*`;
-BLOCK_DEVS="$BLOCK_DEVS `ls -d /sys/block/mtd*`";
-BLOCK_DEVS="$BLOCK_DEVS `ls -d /sys/block/dm-*`";
+MTD=`ls -d /sys/block/mtd*`;
+LOOP=`ls -d /sys/block/loop*`;
+RAM=`ls -d /sys/block/ram*`;
+MMC=`ls -d /sys/block/mmc*`;
 
-for i in $BLOCK_DEVS;
+for j in $DM $MTD $LOOP $RAM;
 do
-    echo "0" > $i/queue/rotational; 
-    echo "16" > $i/queue/iosched/fifo_batch;
-    echo "256" > $i/queue/max_sectors_kb;
+echo "0" > $j/queue/rotational;
 done;
+
+busybox mount -o remount,noatime,noauto_da_alloc,nodiratime,barrier =0,nobh /system
+busybox mount -o remount,noatime,noauto_da_alloc,nosuid,nodev,nodir atime,barrier=0,nobh /data
+busybox mount -o remount,noatime,noauto_da_alloc,nosuid,nodev,nodir atime,barrier=0,nobh /cache
 
 # Enable Sysctl Tweaks
 sysctl -p /system/etc/sysctl.conf
@@ -25,6 +27,7 @@ echo "2432" > /sys/devices/virtual/bdi/179:0/read_ahead_kb;
 
 # Breaking the lease
 echo "15" > /proc/sys/fs/lease-break-time
+echo "-16" > /proc/1/oom_adj;
 
 # TCP Tweaks
 echo "0" > /proc/sys/net/ipv4/tcp_timestamps;
@@ -44,6 +47,10 @@ echo "4096 87380 404480" > /proc/sys/net/ipv4/tcp_rmem;
 setprop net.tcp.buffersize.default 4096,87380,404480,4096,16384,404480;
 setprop net.tcp.buffersize.wifi 4096,87380,404480,4096,16384,404480;
 setprop net.tcp.buffersize.umts 4096,87380,404480,4096,16384,404480;
+
+# Battery Tweaks
+echo 500 > /proc/sys/vm/dirty_expire_centisecs
+echo 1000 > /proc/sys/vm/dirty_writeback_centisecs
 
 sync
 sysro
