@@ -1,14 +1,27 @@
 # Build.Prop Tweaks
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.kernel.android.checkjni=0 \
-    windowsmgr.max_events_per_sec=90 \
-    ro.media.enc.jpeg.quality=100 \
+    dalvik.vm.checkjni=false \
+    dalvik.vm.dexopt-flags=m=y \
+    dalvik.vm.execution-mode=int:jit \
+    dalvik.vm.stack-trace-file=/data/anr/traces.txt \
+    dalvik.vm.verify-bytecode=false \
+    ro.ext4fs=1 \
     ro.HOME_APP_ADJ=1 \
+    ro.kernel.android.checkjni=0 \
+    ro.kernel.checkjni=0 \
+    ro.media.enc.jpeg.quality=100 \
     ro.media.dec.jpeg.memcap=8000000 \
     ro.media.enc.hprof.vid.bps=8000000 \
     ro.media.enc.hprof.vid.fps=65 \
     ro.media.enc.jpeg.quality=100 \
-    debug.composition.type=gpu \
+    windowsmgr.max_events_per_sec=115 \
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.composition.type=gpu
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.performance.tuning=1
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.hw=1
 
 # Misc Files & init.d files
 PRODUCT_COPY_FILES +=  \
