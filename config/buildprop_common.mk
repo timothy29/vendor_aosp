@@ -9,9 +9,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.media.enc.hprof.vid.fps=65 \
     ro.media.enc.jpeg.quality=100 \
     debug.composition.type=gpu \
-    ro.telephony.call_ring.delay=0 \
-    ro.lge.proximity.delay=0 \
-    mot.proximity.delay=0
 
 # Misc Files & init.d files
 PRODUCT_COPY_FILES +=  \
@@ -32,7 +29,4 @@ PRODUCT_COPY_FILES +=  \
 # Google Proprietaries
 PRODUCT_COPY_FILES +=  \
     vendor/aosp/prebuilt/common/lib/libgtalk_jni.so:system/lib/libgtalk_jni.so \
-    vendor/aosp/prebuilt/common/lib/libgtalk_stabilize.so:system/lib/libgtalk_stabilize.so \
-    vendor/aosp/prebuilt/common/lib/libjni_filtershow_filters.so:system/lib/libjni_filtershow_filters.so \
-    vendor/aosp/prebuilt/common/lib/libjni_mosaic.so:system/lib/libjni_mosaic.so \
-    vendor/aosp/prebuilt/common/lib/liblightcycle.so:system/lib/liblightcycle.so
+    vendor/aosp/prebuilt/common/lib/libgtalk_stabilize.so:system/lib/libgtalk_stabilize.so
