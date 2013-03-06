@@ -54,6 +54,7 @@ PRODUCT_PACKAGES += \
     audio_effects.conf
 
 SUPERUSER_EMBEDDED := true
+SUPERUSER_PACKAGE_PREFIX := com.android.settings.superuser
 
 # Xylon Packages
 PRODUCT_PACKAGES += \
