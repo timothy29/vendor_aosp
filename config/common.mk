@@ -53,6 +53,11 @@ PRODUCT_PACKAGES += \
     libcyanogen-dsp \
     audio_effects.conf
 
+# Superuser Packages
+PRODUCT_PACKAGES += \
+    Superuser \
+    su
+
 SUPERUSER_EMBEDDED := true
 SUPERUSER_PACKAGE_PREFIX := com.android.settings.superuser
 
