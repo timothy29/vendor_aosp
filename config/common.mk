@@ -53,6 +53,8 @@ PRODUCT_PACKAGES += \
     libcyanogen-dsp \
     audio_effects.conf
 
+SUPERUSER_EMBEDDED := true
+
 # Xylon Packages
 PRODUCT_PACKAGES += \
     LatinImeDictionaryPack \
