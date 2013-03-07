@@ -1,7 +1,7 @@
 # Build.Prop Tweaks
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.checkjni=false \
-    dalvik.vm.dexopt-flags=m=y \
+    dalvik.vm.dexopt-flags=v=n,o=v \
     dalvik.vm.execution-mode=int:jit \
     dalvik.vm.stack-trace-file=/data/anr/traces.txt \
     dalvik.vm.verify-bytecode=false \

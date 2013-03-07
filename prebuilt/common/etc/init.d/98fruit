@@ -15,6 +15,7 @@ do
 echo "0" > $j/queue/rotational;
 done;
 
+busybox mount -o remount,noauto_da_alloc,nosuid,nodev,noatime,nodiratime /data /data
 busybox mount -o remount,noatime,noauto_da_alloc,nodiratime,barrier =0,nobh /system
 busybox mount -o remount,noatime,noauto_da_alloc,nosuid,nodev,nodir atime,barrier=0,nobh /data
 busybox mount -o remount,noatime,noauto_da_alloc,nosuid,nodev,nodir atime,barrier=0,nobh /cache
@@ -23,7 +24,7 @@ busybox mount -o remount,noatime,noauto_da_alloc,nosuid,nodev,nodir atime,barrie
 sysctl -p /system/etc/sysctl.conf
 
 # Set SD Card Cache
-echo "2432" > /sys/devices/virtual/bdi/179:0/read_ahead_kb;
+echo "1024" > /sys/devices/virtual/bdi/179:0/read_ahead_kb;
 
 # Breaking the lease
 echo "15" > /proc/sys/fs/lease-break-time
@@ -51,6 +52,9 @@ setprop net.tcp.buffersize.umts 4096,87380,404480,4096,16384,404480;
 # Battery Tweaks
 echo 500 > /proc/sys/vm/dirty_expire_centisecs
 echo 1000 > /proc/sys/vm/dirty_writeback_centisecs
+
+# Unknown
+echo "-16" > /proc/1/oom_adj;
 
 sync
 sysro
