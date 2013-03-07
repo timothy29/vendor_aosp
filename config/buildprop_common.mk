@@ -5,6 +5,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.execution-mode=int:jit \
     dalvik.vm.stack-trace-file=/data/anr/traces.txt \
     dalvik.vm.verify-bytecode=false \
+    pm.sleep_mode=1 \
     ro.ext4fs=1 \
     ro.HOME_APP_ADJ=1 \
     ro.kernel.android.checkjni=0 \
@@ -14,7 +15,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.media.enc.hprof.vid.bps=8000000 \
     ro.media.enc.hprof.vid.fps=65 \
     ro.media.enc.jpeg.quality=100 \
-    windowsmgr.max_events_per_sec=115 \
+    windowsmgr.max_events_per_sec=280 \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.composition.type=gpu
