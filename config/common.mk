@@ -48,6 +48,7 @@ include vendor/aosp/config/buildprop_common.mk
 # CyanogenMod Packages
 PRODUCT_PACKAGES += \
     CMFileManager \
+    Development \
     LockClock \
     DSPManager \
     libcyanogen-dsp \
