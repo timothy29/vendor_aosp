@@ -44,7 +44,7 @@ busybox mount -o rw,remount /system
 
 # Nuking run once scripts
 #
-rm /system/etc/init.d/01cherrybomb
+rm /system/etc/init.d/01pikachu
 
 
 busybox mount -o ro,remount /system
