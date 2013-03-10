@@ -11,4 +11,4 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/i9100.mk \
     $(LOCAL_DIR)/i9300.mk \
     $(LOCAL_DIR)/p3100.mk \
-    $(LOACAL_DIR)/leo.mk
+    $(LOCAL_DIR)/leo.mk
