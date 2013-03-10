@@ -1,5 +1,5 @@
 # Inherit AOSP device configuration for galaxys2.
-$(call inherit-product, device/htc/leo/full_leo.mk)
+$(call inherit-product, device/htc/leo/device_leo.mk)
 
 # Inherit common product files.
 $(call inherit-product, vendor/aosp/config/common.mk)
