@@ -65,7 +65,6 @@ SUPERUSER_PACKAGE := com.xyaosp.superuser
 PRODUCT_PACKAGES += \
     LatinImeDictionaryPack \
     Music \
-    SnapBlack \
     Torch \
     XYPapers \
     XYSettings \
