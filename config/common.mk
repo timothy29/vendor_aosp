@@ -70,6 +70,11 @@ PRODUCT_PACKAGES += \
     XYSettings \
     XYStats
 
+# NFC
+PRODUCT_COPY_FILES += \
+    vendor/aosp/config/permissions/com.xylon.android.xml:system/etc/permissions/com.xylon.android.xml \
+    vendor/aosp/config/permissions/com.xylon.nfc.enhanced.xml:system/etc/permissions/com.xylon.nfc.enhanced.xml
+
 # SuperSU and sysrw
 PRODUCT_COPY_FILES += \
     vendor/aosp/prebuilt/common/xbin/sysrw:system/xbin/sysrw \
