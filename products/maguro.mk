@@ -5,7 +5,7 @@ $(call inherit-product, device/samsung/maguro/full_maguro.mk)
 $(call inherit-product, vendor/aosp/config/common.mk)
 
 # Inherit common sound files from Sony.
-$(call inherit-product, vendor/aosp/config/sound_effects.mk)
+#$(call inherit-product, vendor/aosp/config/sound_effects.mk)
 
 # Inherit GSM common stuff
 $(call inherit-product, vendor/aosp/config/gsm.mk)
