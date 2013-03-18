@@ -47,6 +47,7 @@ include vendor/aosp/config/buildprop_common.mk
 
 # CyanogenMod Packages
 PRODUCT_PACKAGES += \
+    Apollo \
     CMFileManager \
     Development \
     LockClock \
@@ -64,7 +65,6 @@ SUPERUSER_PACKAGE := com.xyaosp.superuser
 # Xylon Packages
 PRODUCT_PACKAGES += \
     LatinImeDictionaryPack \
-    Music \
     Torch \
     XYPapers \
     XYSettings \

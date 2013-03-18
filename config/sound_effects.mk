@@ -14,9 +14,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     mpq.audio.decode=true
 
 PRODUCT_COPY_FILES +=  \
+    vendor/aosp/prebuilt/common/app/AudioEffectService.apk:system/app/AudioEffectService.apk \
+    vendor/aosp/prebuilt/common/app/SoundEnhancement.apk:system/app/SoundEnhancement.apk \
     vendor/aosp/config/permissions/com.sonyericsson.audioeffectif.xml:system/etc/permissions/com.sonyericsson.audioeffectif.xml \
     vendor/aosp/prebuilt/common/framework/semc_audioeffectif.jar:system/framework/semc_audioeffectif.jar
-
-PRODUCT_PACKAGES += \
-    AudioEffectService \
-    SoundEnhancement
