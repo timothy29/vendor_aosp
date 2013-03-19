@@ -1,5 +1,5 @@
 # Inherit AOSP device configuration for d2spr
-$(call inherit-product, device/samsung/d2att/full_d2vzw.mk)
+$(call inherit-product, device/samsung/d2vzw/full_d2vzw.mk)
 
 # Inherit common product files.
 $(call inherit-product, vendor/aosp/config/common.mk)
