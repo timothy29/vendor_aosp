@@ -4,5 +4,5 @@ PRODUCT_COPY_FILES +=  \
 
 # Use it here for testing
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.purgeable_asset=1 \
+    persist.sys.purgeable_assets=1 \
     persist.sys.use.dithering=1 \
