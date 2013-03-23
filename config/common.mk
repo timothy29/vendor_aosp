@@ -64,6 +64,7 @@ SUPERUSER_PACKAGE := com.xyaosp.superuser
 
 # Xylon Packages
 PRODUCT_PACKAGES += \
+    CleanMaster \
     LatinImeDictionaryPack \
     Torch \
     XYPapers \
