@@ -39,6 +39,7 @@ PRODUCT_RELEASE_NAME := GT-I9100G
 
 # Copy maguro specific prebuilt files
 PRODUCT_COPY_FILES +=  \
+    vendor/aosp/prebuilt/hybrid_hdpi.conf:system/etc/beerbong/properties.conf \
     vendor/aosp/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip \
     vendor/aosp/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
     vendor/aosp/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd

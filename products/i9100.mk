@@ -22,4 +22,5 @@ PRODUCT_PACKAGES += \
     Thinkfree
 
 PRODUCT_COPY_FILES += \
+   vendor/aosp/prebuilt/hybrid_hdpi.conf:system/etc/beerbong/properties.conf \
    vendor/aosp/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip
