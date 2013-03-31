@@ -1,5 +1,5 @@
 #!/system/bin/sh
-chmod 777 system/etc/init.d/S01defrag
+chmod 777 system/etc/init.d/03defrag
 
 for i in \`busybox find /d* -iname "*.db"\`; do
 sqlite3 \$i 'VACUUM;';
