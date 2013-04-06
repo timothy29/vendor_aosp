@@ -1,29 +1,6 @@
 #!/system/bin/sh
 # BANG BANG
 
-sync
-sysrw
-
 # Trinity Colors
 echo "0 0 0" > /sys/class/misc/colorcontrol/v1_offset
 echo "1350000000 1350000000 2140000000" > /sys/class/misc/colorcontrol/multiplier
-
-# TS Interface
-chmod -R 777 /sys/class/touch/switch/set_touchscreen;
-echo 7035 > /sys/class/touch/switch/set_touchscreen;
-echo 8002 > /sys/class/touch/switch/set_touchscreen;
-echo 11000 > /sys/class/touch/switch/set_touchscreen;
-echo 13060 > /sys/class/touch/switch/set_touchscreen;
-echo 14005 > /sys/class/touch/switch/set_touchscreen;
-chmod -R 444 /sys/class/touch/switch/set_touchscreen;
-
-# Tune2fs?
-tune2fs -o journal_data_writeback /block/path/to/system
-tune2fs -O ^has_journal /block/path/to/system
-tune2fs -o journal_data_writeback /block/path/to/cache
-tune2fs -O ^has_journal /block/path/to/cache
-tune2fs -o journal_data_writeback /block/path/to/data
-tune2fs -O ^has_journal /block/path/to/data
-
-sync
-sysro
