@@ -16,11 +16,12 @@ include frameworks/base/data/sounds/AudioPackageNewWave.mk
 $(call inherit-product, frameworks/base/data/videos/VideoPackage2.mk)
 
 # Backup Tool
-#PRODUCT_COPY_FILES += \
-#    vendor/aosp/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
-#    vendor/aosp/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
-#    vendor/aosp/prebuilt/common/bin/50-xy.sh:system/addon.d/50-xy.sh \
-#    vendor/aosp/prebuilt/common/bin/blacklist:system/addon.d/blacklist
+XY_BUILD = true
+PRODUCT_COPY_FILES += \
+    vendor/aosp/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/aosp/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/aosp/prebuilt/common/bin/50-xy.sh:system/addon.d/50-xy.sh \
+    vendor/aosp/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 
 # Enable ADB authentication
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
