@@ -27,10 +27,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=takju BUILD_ID=JDQ39 BUILD_FINGERPR
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.mcc_fallback=262
-
-# Copy maguro specific prebuilt files
-PRODUCT_COPY_FILES +=  \
-    vendor/aosp/prebuilt/bootanimation/bootanimation_1280_720.zip:system/media/bootanimation.zip \
-    vendor/aosp/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
-    vendor/aosp/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
-
