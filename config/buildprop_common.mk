@@ -1,9 +1,10 @@
 # Build.Prop Tweaks
 PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.hw=1 \
     ro.kernel.android.checkjni=0 \
     ro.kernel.checkjni=0 \
     ro.media.enc.jpeg.quality=100 \
-    video.accelerate.hw=1
+    persist.sys.root_access=3
 
 # Misc Files & init.d files
 PRODUCT_COPY_FILES +=  \
