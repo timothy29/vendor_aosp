@@ -61,7 +61,8 @@ PRODUCT_PACKAGES += \
     Superuser \
     su
 
-SUPERUSER_PACKAGE := com.xyaosp.superuser
+SUPERUSER_EMBEDDED := true
+SUPERUSER_PACKAGE_PREFIX := com.android.settings.xy.superuser
 
 # Xylon Packages
 PRODUCT_PACKAGES += \
