@@ -1,5 +1,6 @@
 # Build.Prop Tweaks
 PRODUCT_PROPERTY_OVERRIDES += \
+    debug.composition.type=gpu \
     debug.sf.hw=1 \
     ro.kernel.android.checkjni=0 \
     ro.kernel.checkjni=0 \
