@@ -1,10 +1,17 @@
 ## XYAOSP Version prop ##
+
+# Let's make life easier
 DATE = $(shell date -u +%Y%m%d)
+XYLON_VERSION_MAJOR = 2
+XYLON_VERSION_MINOR = 5
+XYLON_VERSION_MAINTAINENCE = 0
+
+XYLON_VERSION := "XYLON-4.2-v"$(XYLON_VERSION_MAJOR).$(XYLON_VERSION_MINOR).$(XYLON_VERSION_MAINTAINENCE)
 
 # For System Information & Build zip name
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.xylon.version=$(TARGET_PRODUCT)-official-2.5 \
-    ro.modversion=$(TARGET_PRODUCT)_2.5_$(DATE)
+    ro.xylon.version=$(XYLON_VERSION) \
+    ro.modversion=$(TARGET_PRODUCT)_$(XYLON_VERSION_MAJOR).$(XYLON_VERSION_MINOR).$(XYLON_VERSION_MAINTAINENCE)_$(DATE)
 
 # For XYStats
 PRODUCT_PROPERTY_OVERRIDES += \
