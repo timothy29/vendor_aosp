@@ -3,7 +3,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.composition.type=gpu \
     debug.sf.hw=1 \
     ro.kernel.android.checkjni=0 \
-    ro.kernel.checkjni=0 \
     ro.media.enc.jpeg.quality=100 \
     persist.sys.root_access=3
 
