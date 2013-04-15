@@ -11,6 +11,7 @@ add_lunch_combo xylon_toroplus-userdebug
 add_lunch_combo xylon_i9100g-userdebug
 add_lunch_combo xylon_i9100-userdebug
 add_lunch_combo xylon_i9300-userdebug
+add_lunch_combo xylon_i9305-userdebug
 add_lunch_combo xylon_p3100-userdebug
 add_lunch_combo xylon_leo-userdebug
 add_lunch_combo xylon_tf101-userdebug
