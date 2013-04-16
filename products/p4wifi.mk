@@ -1,4 +1,4 @@
-\# Inherit device configuration for p4wifi.
+# Inherit device configuration for p4wifi.
 $(call inherit-product, device/samsung/p4wifi/p4wifi.mk)
 
 # Grouper Overlay
