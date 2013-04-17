@@ -9,5 +9,5 @@ PRODUCT_COPY_FILES +=  \
     vendor/aosp/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
 # Use it here for testing
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.purgeable_assets=1
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    persist.sys.purgeable_assets=1

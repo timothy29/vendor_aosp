@@ -1,6 +1,7 @@
 # Build.Prop Tweaks
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.composition.type=gpu \
+    debug.performance.tuning=1 \
     debug.sf.hw=1 \
     ro.kernel.android.checkjni=0 \
     ro.media.enc.jpeg.quality=100 \
