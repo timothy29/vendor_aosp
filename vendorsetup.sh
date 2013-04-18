@@ -17,4 +17,6 @@ add_lunch_combo xylon_p3100-userdebug
 add_lunch_combo xylon_leo-userdebug
 add_lunch_combo xylon_tf101-userdebug
 add_lunch_combo xylon_t0lte-userdebug
+add_lunch_combo xylon_t0lteatt-userdebug
+add_lunch_combo xylon_t0ltetmo-userdebug
 add_lunch_combo xylon_p4wifi-userdebug

@@ -18,4 +18,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/leo.mk \
     $(LOCAL_DIR)/tf101.mk \
     $(LOCAL_DIR)/t0lte.mk \
+    $(LOCAL_DIR)/t0lteatt.mk \
+    $(LOCAL_DIR)/t0ltetmo.mk \
     $(LOCAL_DIR)/p4wifi.mk
