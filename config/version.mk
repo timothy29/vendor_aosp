@@ -17,6 +17,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.xylon.isitrom=xylon \
     ro.xylon.modname=xylon-aosp \
-    ro.xylon.modversion=2.5-$(DATE) \
+    ro.xylon.modversion=2.6-$(DATE) \
     ro.xylon.device=$(TARGET_PRODUCT) \
     ro.xylon.builtdate=$(DATE)
