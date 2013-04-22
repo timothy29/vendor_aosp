@@ -69,6 +69,7 @@ PRODUCT_PACKAGES += \
     DashClock \
     LatinImeDictionaryPack \
     Torch \
+    tune2fs \
     XYPapers \
     XYSettings \
     XYStats
