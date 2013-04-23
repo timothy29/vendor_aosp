@@ -24,7 +24,7 @@ PRODUCT_COPY_FILES += \
     vendor/aosp/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 
 # Enable ADB authentication
-ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
+ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
 
 # Build Information Properties
 include vendor/aosp/config/version.mk

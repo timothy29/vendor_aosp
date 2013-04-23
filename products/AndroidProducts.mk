@@ -1,5 +1,6 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/crespo.mk \
+    $(LOCAL_DIR)/crespo4g.mk \
     $(LOCAL_DIR)/d2att.mk \
     $(LOCAL_DIR)/d2spr.mk \
     $(LOCAL_DIR)/d2vzw.mk \
