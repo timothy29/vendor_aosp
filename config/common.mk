@@ -65,7 +65,6 @@ SUPERUSER_PACKAGE := com.xyaosp.superuser
 
 # Xylon Packages
 PRODUCT_PACKAGES += \
-    CleanMaster \
     DashClock \
     LatinImeDictionaryPack \
     Torch \
