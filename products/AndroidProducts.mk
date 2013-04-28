@@ -21,4 +21,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/t0lte.mk \
     $(LOCAL_DIR)/t0lteatt.mk \
     $(LOCAL_DIR)/t0ltetmo.mk \
+    $(LOCAL_DIR)/i605.mk \
+    $(LOCAL_DIR)/l900.mk \
     $(LOCAL_DIR)/p4wifi.mk
