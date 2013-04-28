@@ -1,5 +1,5 @@
 # Inherit AOSP device configuration for t0lte.
-$(call inherit-product, device/samsung/t0lte/full_t0lteatt.mk)
+$(call inherit-product, device/samsung/t0lte/t0lteatt.mk)
 
 # Inherit common product files.
 $(call inherit-product, vendor/aosp/config/common.mk)
