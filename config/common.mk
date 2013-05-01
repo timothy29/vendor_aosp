@@ -67,6 +67,7 @@ SUPERUSER_PACKAGE := com.xyaosp.superuser
 PRODUCT_PACKAGES += \
     DashClock \
     LatinImeDictionaryPack \
+    PermissionsManager \
     Torch \
     tune2fs \
     XYPapers \
