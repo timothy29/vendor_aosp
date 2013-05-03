@@ -1,5 +1,5 @@
 # Inherit AOSP device configuration for mako.
-$(call inherit-product, device/htc/device_m7.mk)
+$(call inherit-product, device/htc/m7/device_m7.mk)
 
 # Inherit common product files.
 $(call inherit-product, vendor/aosp/config/common.mk)
