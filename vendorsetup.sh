@@ -5,6 +5,7 @@ add_lunch_combo xylon_d2spr-userdebug
 add_lunch_combo xylon_d2tmo-userdebug
 add_lunch_combo xylon_d2vzw-userdebug
 add_lunch_combo xylon_grouper-userdebug
+add_lunch_combo xylon_m7-userdebug
 add_lunch_combo xylon_maguro-userdebug
 add_lunch_combo xylon_mako-userdebug
 add_lunch_combo xylon_tilapia-userdebug
