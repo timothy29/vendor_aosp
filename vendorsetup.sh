@@ -15,6 +15,7 @@ add_lunch_combo xylon_i9100g-userdebug
 add_lunch_combo xylon_i9100-userdebug
 add_lunch_combo xylon_i9300-userdebug
 add_lunch_combo xylon_i9305-userdebug
+add_lunch_combo xylon_jfltetmo-userdebug
 add_lunch_combo xylon_n7100-userdebug
 add_lunch_combo xylon_p3100-userdebug
 add_lunch_combo xylon_leo-userdebug
