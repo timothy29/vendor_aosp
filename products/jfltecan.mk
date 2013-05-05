@@ -1,5 +1,5 @@
 # Inherit AOSP device configuration for jflteatt.
-$(call inherit-product, device/samsung/jflteatt/full_jflteatt.mk)
+$(call inherit-product, device/samsung/jflteatt/full_jfltecan.mk)
 
 # Inherit common product files.
 $(call inherit-product, vendor/aosp/config/common.mk)
@@ -11,13 +11,13 @@ $(call inherit-product, vendor/aosp/config/gsm.mk)
 PRODUCT_PACKAGE_OVERLAYS += vendor/aosp/overlay/toro
 
 # Setup device specific product configuration.
-PRODUCT_NAME := xylon_jflteatt
+PRODUCT_NAME := xylon_jfltecan
 PRODUCT_BRAND := Samsung
-PRODUCT_DEVICE := jflteatt
+PRODUCT_DEVICE := jfltecan
 PRODUCT_MODEL := SGS4
 PRODUCT_MANUFACTURER := Samsung
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=jflteatt TARGET_DEVICE=jflteatt BUILD_FINGERPRINT="samsung/jflteatt/jflteatt:4.2.2/JDQ39:user/release-keys" PRIVATE_BUILD_DESC="jflteatt-user 4.2.2 JDQ39 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=jfltevl TARGET_DEVICE=jfltecan BUILD_FINGERPRINT="samsung/jfltevl/jfltecan:4.2.2/JDQ39/I337MVLUAMDJ:user/release-keys" PRIVATE_BUILD_DESC="jfltevl-user 4.2.2 JDQ39 I337MVLUAMDJ release-keys"
 
 # Copy mako specific prebuilt files
 PRODUCT_COPY_FILES +=  \
