@@ -4,6 +4,9 @@ add_lunch_combo xylon_d2att-userdebug
 add_lunch_combo xylon_d2spr-userdebug
 add_lunch_combo xylon_d2tmo-userdebug
 add_lunch_combo xylon_d2vzw-userdebug
+add_lunch_combo xylon_d710-userdebug
+add_lunch_combo xylon_hercules-userdebug
+add_lunch_combo xylon_i777-userdebug
 add_lunch_combo xylon_grouper-userdebug
 add_lunch_combo xylon_m7-userdebug
 add_lunch_combo xylon_maguro-userdebug

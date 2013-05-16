@@ -1,5 +1,5 @@
 # Inherit AOSP device configuration for jflteatt.
-$(call inherit-product, device/samsung/jflteatt/full_jfltecan.mk)
+$(call inherit-product, device/samsung/jfltecan/full_jfltecan.mk)
 
 # Inherit common product files.
 $(call inherit-product, vendor/aosp/config/common.mk)
